@@ -9,7 +9,8 @@
 		"vite": "vite dev",
 		"lint": "oxlint . && prettier --write .",
 		"test": "vitest",
-		"coverage": "vitest run --coverage"
+		"coverage": "vitest run --coverage",
+		"build": "tsx build.ts && pnpm lint"
 	},
 	"keywords": [],
 	"author": "Bruno Costa Prado",
@@ -22,6 +23,8 @@
 		"@types/express": "^4.17.21",
 		"@types/node": "^20.12.10",
 		"@vitest/coverage-v8": "^1.6.0",
+		"devalue": "^5.0.0",
+		"esbuild": "^0.21.1",
 		"tslib": "^2.6.2",
 		"tsx": "^4.9.3",
 		"typescript": "^5.4.5",
