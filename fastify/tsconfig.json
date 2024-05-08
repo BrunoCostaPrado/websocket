@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "ES2022",
+		"moduleResolution": "Bundler",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"plugins": [{ "transform": "transformer-module" }],
+		"resolveJsonModule": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"strict": true,
+		"strictNullChecks": true,
+		// "allowJs": true,
+		"checkJs": true,
+		"lib": ["dom", "dom.iterable", "ES2022"],
+		"noImplicitAny": false,
+		"outDir": "build",
+		"importHelpers": true,
+		// "declarationMap": true,
+		"declarationDir": "types",
+		"emitDeclarationOnly": true,
+		"declaration": true
+		//"noEmit": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "build", "types", "src/routes"]
+}
